@@ -1,14 +1,15 @@
-import express from "express";
 
+// import express from "express";
+const express = require("express");
 const app = express();
-const port = 8000;
+
 
 app.get("/", (req, res) => {
   res.send("Hello, World! i m index-js");
 });
-
+const port = 8000;
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
 
-export default app;
+// export default app;
